@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:coffeeshop_app/welcome_page.dart';
+import 'package:coffeeshop_app/beranda_page.dart';
+import 'package:coffeeshop_app/menu_page.dart';
 
 void main() {
   runApp(const CoffeeApp());

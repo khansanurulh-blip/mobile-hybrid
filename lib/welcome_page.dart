@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:coffeeshop_app/beranda_page.dart';
+import 'package:coffeeshop_app/menu_page.dart';
 
 class WelcomePage extends StatefulWidget {
   const WelcomePage({super.key});
@@ -88,7 +90,14 @@ class _WelcomePageState extends State<WelcomePage> {
                     width: double.infinity,
                     height: 55,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => BerandaPage(),
+                            ),
+                          );
+                      },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Color(0xFFFF8C32),
                         shape: RoundedRectangleBorder(
